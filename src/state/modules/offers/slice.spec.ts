@@ -13,6 +13,7 @@ describe("offers reducer", () => {
 
 	it("should handle initial state", () => {
 		expect(offersReducer(undefined, { type: "unknown" })).toEqual({
+			filteredOffers: [],
 			offers: [],
 			status: "idle",
 			isLoading: false,
